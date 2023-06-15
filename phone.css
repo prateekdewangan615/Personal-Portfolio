@@ -1,0 +1,107 @@
+/*Home Section*/
+#home{
+    flex-direction: column-reverse;
+    align-items: center;
+    justify-content: center;
+}
+#navbar{
+    flex-direction: column;
+}
+#navbar ul{
+    flex-direction: column;
+}
+#navbar ul li{
+    margin: 1px;
+    padding: 3px;
+    border-top: 1px solid white;
+}
+#navbar ul li a{
+    text-align: center;
+}
+/*Education Section*/
+#edu{
+    flex-direction: column;
+}
+#skill{
+    flex-direction: column;
+}
+.head2{
+    font-size: 109%;
+    line-height: 35px;
+}
+#photo img{
+    padding: 0px;
+    width: 160px;
+}
+#intro{
+    font-size: 110%;
+    line-height: 25px;
+    margin: 0px;
+    padding: 10px 30px 20px 30px;
+    color: white;
+}
+.head{
+    font-size: 28px;
+    font-weight: 600;
+}
+.btne{
+    font-size: 85%;
+    width: 115px;
+}
+/*Resume Section*/
+#resume #res .resumeitems{
+    
+    width: 80%;
+    text-align: justify;
+    font-size: 130%;
+    margin: 20px;
+    transition-property: all;
+    transition-duration: 1s;
+}
+#resumeimage{
+    width: 160px;
+}
+#resume .btne{
+    font-size: 75%;
+}
+/*Contact Section*/
+.contactcont label{
+    text-align: center;
+    width: 50%;
+    font-size: 105%;
+}
+.contactcont input{
+    font-size: 95%;
+}
+/*Button Section*/
+.btn{
+    padding: 10px;
+    margin: 10px;
+    font-size: 100%;
+    width: 100px;
+}
+.btn:hover{
+    width: 120px;
+}
+
+/*Projects Section*/
+#pro{
+    margin: 5px;
+    padding: 15px;
+}
+#pro .proitems{
+    width: 80%;
+    font-size: 105%;
+}
+.proimage{
+    width: 250px;
+}
+#social .imgitem{
+    width: 50px;
+}
+/*Footer*/
+.foot{
+    font-size: 90%;
+}
+
+
