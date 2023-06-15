@@ -93,8 +93,6 @@ body{
     justify-content: center;
     width: 100%;
     flex-wrap: wrap;
-    margin: 10px;
-    padding: 19px;
 }
 #education .items{
     display: flex;
@@ -102,7 +100,6 @@ body{
     align-items: center;
     justify-content: center;
     width: 400px;
-    height: 200px;
     border:2px solid black;
     border-radius: 10px;
     margin:10px;
@@ -119,8 +116,6 @@ body{
     justify-content: center;
     width: 100%;
     flex-wrap: wrap;
-    margin: 10px;
-    padding: 10px;
 }
 #skill .skillitem{
     display: flex;
@@ -131,7 +126,7 @@ body{
     border-radius: 10px;
     margin: 10px 20px;
     padding: 20px;
-    width: 300px;
+    width: 400px;
     text-align: justify;
     font-size: 110%;
 }
@@ -181,13 +176,13 @@ body{
     border-radius: 10px;
     margin: 10px;
     padding: 20px;
-    width: 70%;
+    width: 600px;
     text-align: center;
     font-size: 110%;
     gap: 15px;
 }
 .proimage{
-    width: 35%;
+    width: 100%;
     border: 2px solid black;
 }
 /*Contact Section*/
@@ -276,6 +271,10 @@ body{
     color: white;
     transition-property: all;
     transition-duration: 0.2s;
+}
+.btne a{
+    text-decoration: none;
+    color: white;
 }
 .btne:hover{
     background-color: white;
