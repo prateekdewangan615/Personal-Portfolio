@@ -18,12 +18,25 @@
 #navbar ul li a{
     text-align: center;
 }
+#education .items h3{
+    font-size: 110%;
+}
 /*Education Section*/
 #edu{
     flex-direction: column;
 }
+#education .items{
+    width: 65%;
+}
+
 #skill{
     flex-direction: column;
+}
+#skill .skillitem{
+    width: 60%;
+}
+.topic{
+    font-size: 130%;
 }
 .head2{
     font-size: 109%;
@@ -49,14 +62,9 @@
     width: 115px;
 }
 /*Resume Section*/
+
 #resume #res .resumeitems{
-    
-    width: 80%;
-    text-align: justify;
-    font-size: 130%;
-    margin: 20px;
-    transition-property: all;
-    transition-duration: 1s;
+    font-size: 110%;
 }
 #resumeimage{
     width: 160px;
@@ -85,16 +93,14 @@
 }
 
 /*Projects Section*/
-#pro{
-    margin: 5px;
-    padding: 15px;
-}
+
+
 #pro .proitems{
     width: 80%;
     font-size: 105%;
 }
 .proimage{
-    width: 250px;
+    width: 100%;
 }
 #social .imgitem{
     width: 50px;
