@@ -14,7 +14,7 @@
         <nav id="navbar">
             <div id="logo">
                 <img src="images/Photo.jpg" alt="mypicture">
-                <h2 style="color: white;"><span style="color: red;">Pra</span>teek's <span style="color: red;">Port</span>folio</h2>
+                <h2 class="reddish">Prateek's Portfolio</h2>
             </div>
                 <ul>
                     <li class="item"><a href="#home">Home</a></li>
@@ -30,8 +30,8 @@
     <!--Home Section-->
     <section id="home">
         <div id="intro">
-            <h1 class="head2">Hello, My name is <span style="color: red;">Prateek Dewangan</span></h1>
-            <h1 class="head2">I am a <span id="element" style="color: red;"></span></h1><br>
+            <h1 class="head2">Hello, My name is <span class="reddish">Prateek Dewangan</span></h1>
+            <h1 class="head2">I am a <span id="element"></span></h1><br>
             <p>I am a passionate competitive programmer and a Web Developer with extensive experience for over 2 years. My expertise is problem-solving in C++ and DSA, to create and design website and many more. I am pursuing my B.Tech. Degree in Computer Science & Engineering at National Institute of Technology, Raipur. Iam proficient in many programming languages, including C, C++, HTML & CSS. I love to collaborate, learn and build new things.</p>
         </div>
         <div id="photo">
@@ -78,15 +78,15 @@
         <div id="skill">
             <div class="skillitem">
                 <h2 class="topic">Front End Web-Development</h2><br>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe atque exercitationem sit sint minima ea? Dolore nisi, incidunt nesciunt rerum placeat fuga aut explicabo quos! Quae corrupti suscipit earum officia.</p>
+                <p>I know how to make responsive websites using HTML, CSS & Javascript</p>
             </div>
             <div class="skillitem">
                 <h2 class="topic">Back End Web-Development</h2><br>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe atque exercitationem sit sint minima ea? Dolore nisi, incidunt nesciunt rerum placeat fuga aut explicabo quos! Quae corrupti suscipit earum officia.</p>
+                <p>I know PHP for backend and to store the database using MYSQL.</p>
             </div>
             <div class="skillitem">
                 <h2 class="topic">C++</h2><br>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe atque exercitationem sit sint minima ea? Dolore nisi, incidunt nesciunt rerum placeat fuga aut explicabo quos! Quae corrupti suscipit earum officia.</p>
+                <p>I know the implementation of various data structures in C++.</p>
             </div>
         </div>
 </div>
@@ -104,7 +104,7 @@
                 </div>
                 <div class="resumeitems">
                     <img src="images/resume.png" alt="logo" id="resumeimage";>
-                    <button class="btne">Download</button>
+                    <button class="btne"><a href="https://drive.google.com/file/d/1x9KE8376L_bXWWnsms8dIvfk0VveL2dL/view?usp=drive_link">Download</a></button>
                 </div>
             </div>  
         </div>
@@ -127,20 +127,20 @@
                     </div>
                 </div>
                 <div class="proitems">
-                    <h2>IT Company Website</h2>
+                    <h2>Quick Note App</h2>
                     <img src="images/project2.png" alt="logo" class="proimage">
-                    <p>An IT Company Website crafted with HTML and CSS presents a professional online presence, showcasing the company's mission and values, services, expertise and career options. It features a sleek design, easy navigation, informative content, and contact options, providing visitors with a comprehensive overview of the company's offerings and establishing credibility.</p>
-                    <h4>Tech Stack Used: HTML & CSS</h4>
+                    <p>In this project, I have created a tool which is used to keep track of daily activities with functionality of adding new tasks and deleting on completion. I have used CSS for styling & Javascript for functionality.</p>
+                    <h4>Tech Stack Used: HTML, CSS & Javascript</h4>
                     <div>
-                        <button class="btne"><a href="https://prateekdewangan-itcompany.netlify.app">View Project</a></button>
-                        <button class="btne"><a href="https://github.com/prateekdewangan615/IT-Company-Webpage">View Code</a></button>
+                        <button class="btne"><a href="https://prateekdewangan-quicknote.netlify.app">View Project</a></button>
+                        <button class="btne"><a href="https://github.com/prateekdewangan615/Quick-Note.git">View Code</a></button>
                     </div>
                 </div>
                 <div class="proitems">
-                    <h2>Ecommerce Website</h2>
+                    <h2>Myntra CLONE</h2>
                     <img src="images/project3.png" alt="logo" class="proimage">
-                    <p>An HTML and CSS-based Ecommerce Website provides a platform for online shopping, showcasing products with detailed descriptions and images. It includes a user-friendly interface, shopping cart functionality, and a seamless checkout process, offering a convenient and engaging online shopping experience.</p>
-                    <h4>Tech Stack Used: HTML & CSS</h4>
+                    <p>In this project, I have cloned the landing page of Ecommerce Website Myntra using HTML, CSS & Javascript. I have used CSS to create all the animation effects and hover effects along with extensive use of CSS Flexbox.</p>
+                    <h4>Tech Stack Used: HTML, CSS & Javascript</h4>
                     <div>
                         <button class="btne"><a href="https://prateekdewangan-ecommerce.netlify.app">View Project</a></button>
                         <button class="btne"><a href="https://github.com/prateekdewangan615/Ecommerce-Webpage">View Code</a></button>
@@ -155,15 +155,15 @@
     <!--Contact Section-->
     <section id="contactme">
         <h1 class="head">Contact Me</h1>
-        <div class="contactcont">
+        <form action="index.php" method="post" class="contactcont">
             <label for="name">Name</label>
-            <input type="text" id="name" placeholder="Enter your Name">
+            <input type="text" id="name" name="name" placeholder="Enter your Name">
             <label for="email">Email</label>
-            <input type="email" id="email" placeholder="Enter your Email">
-            <label for="mess">Message</label>
-            <input type="text-area" id="mess" placeholder="Enter your Message">
+            <input type="email" id="email" name="email" placeholder="Enter your Email">
+            <label for="message">Message</label>
+            <input type="text" id="message" name="message" placeholder="Enter your Message">
             <button class="btn">Submit</button>
-        </div>
+    </form>
         <div id="social">
             <img class="imgitem" src="images/logo1.png" alt="abc" width="100px">
             <img class="imgitem" src="images/logo2.png" alt="abc" width="100px">
