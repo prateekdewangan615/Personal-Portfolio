@@ -6,6 +6,9 @@
 body{
     background-color:rgb(235, 250, 255);
 }
+.reddish{
+    color: red;
+}
 /*Navigation Menu*/
 #logo{
     display: flex;
