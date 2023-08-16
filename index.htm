@@ -6,7 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Prateek Dewangan Portfolio</title>
     <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" media="screen and (max-width:1100px)" href="phone.css">
+    <link rel="shortcut icon" href="images/Photo.jpg" type="image/x-icon">
+    <link rel="stylesheet" media="screen and (max-width:1200px)" href="phone.css">
 </head>
 <body>
     <!--Navigation Menu-->
@@ -28,42 +29,54 @@
     </header>
     
     <!--Home Section-->
-    <section id="home">
+    <div id="home">
         <div id="intro">
             <h1 class="head2">Hello, My name is <span class="reddish">Prateek Dewangan</span></h1>
             <h1 class="head2">I am a Programmer</h1><br>
-            <p>I am a passionate competitive programmer and a Web Developer with extensive experience for over 2 years. My expertise is problem-solving in C++ and DSA, to create and design website and many more. I am pursuing my B.Tech. Degree in Computer Science & Engineering at National Institute of Technology, Raipur. Iam proficient in many programming languages, including C, C++, HTML & CSS. I love to collaborate, learn and build new things.</p>
+            <p>I am a passionate competitive programmer and a Web Developer with extensive experience for over 2 years. My expertise is problem-solving in C++ and DSA, to create and design website and many more. I am pursuing my B.Tech. Degree in Computer Science & Engineering at National Institute of Technology, Raipur. I am proficient in many programming languages, including C++, HTML & CSS. I love to collaborate, learn and build new things.</p>
         </div>
         <div id="photo">
             <img src="images/Photo.jpg" alt="mypicture">
         </div>
-    </section><hr><br>
+    </div>
+    <div class="social2">
+        <a href="https://auth.geeksforgeeks.org/user/prateekdewangan615"><img class="imgitem" src="images/gfglogo.jpg" alt="abc" width="100px" style="border-radius: 30%;"></a>
+        <a href="https://leetcode.com/prateekdewangan615/"><img class="imgitem" src="images/leetcodelogo.jpg" alt="abc" width="100px"></a>
+        <a href="https://github.com/prateekdewangan615"><img src="images/logo2.jpg" alt="github" class="imgitem" width="100px"></a>
+    </div>
+    <br><hr><br>
     
     <!--Education Section-->
     <section>
         <div id="education">
             <h1 class="head">Education</h1>
-            <div id="edu">
-                <div class="items">
-                    <img src="images/tag1.jpg" alt="logo" width="70px">
-                    <h3>National Institute of Technology, Raipur</h3>
-                    <p>B.Tech. in Computer Science & Engineering </p>
-                    <p>Session: 2020 - 2024</p>
-                    <p>CGPA: 9.27 (Till 6th Semester)</p>
+            <div id="edutimeline">
+                <div class="container leftside">
+                    <div class="items">
+                        <img src="images/tag1.jpg" alt="logo" width="70px">
+                        <h3>National Institute of Technology, Raipur</h3>
+                        <p>B.Tech. in Computer Science & Engineering </p>
+                        <p>Session: 2020 - 2024</p>
+                        <p>CGPA: 9.27 (Till 6th Semester)</p>
+                    </div>
                 </div>
-                <div class="items">
-                    <img src="images/tag2.jpg" alt="logo" width="70px">
-                    <h3>DAV Mukhyamantri Public School, Narayanpur</h3>
-                    <p>12th CBSE Board</p>
-                    <p>Session: 2019-2020</p>
-                    <p>Percentage: 95.80% (Rank 1 in District)</p>
-                </div>
-                <div class="items">
-                    <img src="images/tag2.jpg" alt="logo" width="70px">
-                    <h3>Viswa Deepti High School, Narayanpur</h3>
-                    <p>10th CGBSE Board</p>
-                    <p>Session: 2017-2018</p>
-                    <p>Percentage: 95.00% (Rank 1 in District)</p>
+               <div class="container rightside">
+                    <div class="items">
+                        <img src="images/tag2.jpg" alt="logo" width="70px">
+                        <h3>DAV Mukhyamantri Public School, Narayanpur</h3>
+                        <p>12th CBSE Board</p>
+                        <p>Session: 2019-2020</p>
+                        <p>Percentage: 95.80% (Rank 1 in District)</p>
+                    </div>
+               </div>
+                <div class="container leftside">
+                    <div class="items">
+                        <img src="images/tag2.jpg" alt="logo" width="70px">
+                        <h3>Viswa Deepti High School, Narayanpur</h3>
+                        <p>10th CGBSE Board</p>
+                        <p>Session: 2017-2018</p>
+                        <p>Percentage: 95.00% (Rank 1 in District)</p>
+                    </div>
                 </div>
             </div>
     </div>
@@ -71,23 +84,27 @@
     <br>
     <hr>
     <br>
+    <br>
     <!--Skills Section-->
     
 <section>
     <div id="skills">
-        <h1 class="head">Skills</h1>
+        <h1 class="head">Skills</h1><br>
         <div id="skill">
             <div class="skillitem">
                 <h2 class="topic">Front End Web-Development</h2><br>
+                <div><img src="images/htmlcss.png" alt="html,css and javascript" width="200px"></div>
                 <p>I am proficient in frontend development with HTML, CSS, and JavaScript. I can create visually appealing web pages, style them using CSS, and add interactivity using JavaScript. I can design user-friendly interfaces and enhance the overall user experience on websites and web applications.</p>
             </div>
             <div class="skillitem">
                 <h2 class="topic">Back End Web-Development</h2><br>
+                <div><img src="images/phpsql.png" alt="php and mysql" width="200px"></div>
                 <p>I am knowledgeable in backend development using PHP and MySQL. I can build dynamic websites and web applications, handle data storage and retrieval, and create interactive features by integrating PHP code with MySQL databases.</p>
             </div>
-            <div class="skillitem">
-                <h2 class="topic">C++</h2><br>
-                <p>I have a good understanding of C++ programming language. I am familiar with various data structures like arrays, linked lists, stacks, queues, trees, and graphs. I can use them effectively to solve problems and create efficient programs.</p>
+            <div class="skillitem"> 
+                <h2 class="topic">C++ Programming Language</h2>
+                <div><img src="images/c++.png" alt="c++" width="100px"></div>
+                <p>I have a good understanding of C++ programming language. I am familiar with various data structures like arrays, linked lists, stacks, queues, trees, and graphs along with dynamic programming. I can use them effectively to solve problems and create efficient programs.</p>
             </div>
         </div>
 </div>
@@ -100,17 +117,18 @@
         <div id="resume">
             <h1 class="head">Resume</h1>
             <div id="res">
-                <div class="resumeitems">
+                <div class="resumeitems resumedesc">
                     <p>Hi there! This is my resume.</p>
                     <p></p>I am skilled in various technologies and ready to collaborate on exciting projects. I look forward to the opportunity to work together and feel free to contact me through any of my Social Media Handles.</p>
                 </div>
                 <div class="resumeitems">
-                    <img src="images/resume.png" alt="logo" id="resumeimage";>
+                    <img src="images/resume.png" alt="logo" id="resumeimage">
                     <button class="btne"><a href="https://drive.google.com/file/d/1x9KE8376L_bXWWnsms8dIvfk0VveL2dL/view?usp=drive_link">Download</a></button>
                 </div>
             </div>  
         </div>
     </section>
+    <br>
     <hr>
     <br>
     <!--Projects Section-->
@@ -119,39 +137,44 @@
             <h1 class="head">Projects</h1>
             <div id="pro">
                 <div class="proitems">
-                    <h2>Personal Portfolio Website</h2>
                     <img src="images/project1.png" alt="logo" class="proimage">
-                    <p>A personal portfolio website built with HTML and CSS showcases a collection of work, education background, skills, resume and accomplishments. It features a visually appealing design, intuitive navigation and providing a professional online presence.</p>
-                    <h4>Tech Stack Used: HTML, CSS, Javascript & PHP</h4>
-                    <div>
-                        <button class="btne"><a href="https://prateekdewangan-portfolio.netlify.app/">View Project</a></button>
-                        <button class="btne"><a href="https://github.com/prateekdewangan615/Personal-Portfolio.git">View Code</a></button>
+                    <div class="prodesc">
+                        <h2>Personal Portfolio Website</h2>
+                        <p>A personal portfolio website built with HTML and CSS showcases a collection of work, education background, skills, resume and accomplishments. It features a visually appealing design, intuitive navigation and providing a professional online presence.</p>
+                        <h4>Tech Stack Used: HTML, CSS, Javascript & PHP</h4>
+                        <div>
+                            <button class="btne"><a href="https://prateekdewangan-portfolio.netlify.app/">View Project</a></button>
+                            <button class="btne"><a href="https://github.com/prateekdewangan615/Personal-Portfolio.git">View Code</a></button>
+                        </div>
                     </div>
                 </div>
                 <div class="proitems">
-                    <h2>Quick Note App</h2>
                     <img src="images/project2.png" alt="logo" class="proimage">
-                    <p>In this project, I have created a tool which is used to keep track of daily activities with functionality of adding new tasks and deleting on completion. I have used CSS for styling & Javascript for functionality.</p>
-                    <h4>Tech Stack Used: HTML, CSS & Javascript</h4>
-                    <div>
-                        <button class="btne"><a href="https://prateekdewangan-quicknote.netlify.app">View Project</a></button>
-                        <button class="btne"><a href="https://github.com/prateekdewangan615/Quick-Note.git">View Code</a></button>
+                    <div class="prodesc">
+                        <h2>Quick Note App</h2>
+                        <p>In this project, I have created a tool which is used to keep track of daily activities with functionality of adding new tasks and deleting on completion. I have used CSS for styling & Javascript for functionality.</p>
+                        <h4>Tech Stack Used: HTML, CSS & Javascript</h4>
+                        <div>
+                            <button class="btne"><a href="https://prateekdewangan-quicknote.netlify.app">View Project</a></button>
+                            <button class="btne"><a href="https://github.com/prateekdewangan615/Quick-Note.git">View Code</a></button>
+                        </div>
                     </div>
                 </div>
                 <div class="proitems">
-                    <h2>Amazon CLONE</h2>
                     <img src="images/project3.png" alt="logo" class="proimage">
-                    <p>In this project, I have cloned the landing page of Ecommerce Website Amazon using HTML, CSS & Javascript. I have used CSS to create all the hover effects and animation effects along with extensive use of CSS Flexbox. I have used Javascript to add functionality.</p>
-                    <h4>Tech Stack Used: HTML, CSS & Javascript</h4>
-                    <div>
-                        <button class="btne"><a href="https://prateekdewangan-amazon-clone.netlify.app">View Project</a></button>
-                        <button class="btne"><a href="https://github.com/prateekdewangan615/Amazon-CLONE.git">View Code</a></button>
+                    <div class="prodesc">
+                        <h2>Amazon CLONE</h2>
+                        <p>In this project, I have cloned the landing page of Ecommerce Website Amazon using HTML, CSS & Javascript. I have used CSS to create all the hover effects and animation effects along with extensive use of CSS Flexbox. I have used Javascript to add functionality.</p>
+                        <h4>Tech Stack Used: HTML, CSS & Javascript</h4>
+                        <div>
+                            <button class="btne"><a href="https://prateekdewangan-amazon-clone.netlify.app">View Project</a></button>
+                            <button class="btne"><a href="https://github.com/prateekdewangan615/Amazon-CLONE.git">View Code</a></button>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
     </section>
-
     <hr>
     <br>
     <!--Contact Section-->
@@ -166,14 +189,14 @@
             <input type="text" id="message" name="message" placeholder="Enter your Message">
             <button class="btn">Submit</button>
     </form>
-        <div id="social">
+        <div class="social">
             <a href="#"><img class="imgitem" src="images/logo1.png" alt="abc" width="100px"></a>
-            <a href="#"><img class="imgitem" src="images/logo2.png" alt="abc" width="100px"></a>
-            <a href="#"><img class="imgitem" src="images/logo3.png" alt="abc" width="100px"></a>
-            <a href="#"><img class="imgitem" src="images/logo4.png" alt="abc" width="100px"></a>
+            <a href="https://github.com/prateekdewangan615"><img class="imgitem" src="images/logo2.png" alt="abc" width="100px"></a>
+            <a href="https://www.linkedin.com/in/prateek-dewangan-b24365215"><img class="imgitem" src="images/logo3.png" alt="abc" width="100px"></a>
+            <a href="mailto:prateekdewangan615@gmail.com"><img class="imgitem" src="images/logo4.png" alt="abc" width="100px"></a>
         </div>
     </section>
-
+    <br>
   <!--Footer Section-->
   <footer class="foot">
     <p style="color: white;">Made By Prateek Dewangan</p>
