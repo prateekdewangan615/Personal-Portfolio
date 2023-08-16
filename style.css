@@ -2,9 +2,7 @@
     margin: 0;
     padding: 0;
     color: black;
-}
-body{
-    background-color:rgb(235, 250, 255);
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
 .reddish{
     color: red;
@@ -25,6 +23,7 @@ body{
 }
 #navbar{
     display: flex;
+    align-items: center;
     background-color: black;
     justify-content: space-around;
 }
@@ -33,26 +32,20 @@ body{
 }
 #navbar ul li{
     list-style-type: none;
-    position: relative;
-    float: left;
+    padding: 10px;
     margin: 10px;
-    padding: 8px;
+    border-radius: 10px;
+    transition-property: background-color;
+    transition-duration: 0.2s;
+}
+#navbar ul li:hover{
+    background-color: rgb(255, 0, 0);
+    cursor: pointer;
 }
 #navbar ul li a{
     text-decoration: none;
-    display: block;
     color: white;
     font-size: 18px;
-    border-radius: 10px;
-    margin: 1px;
-    padding: 10px;
-    transition-property: all;
-    transition-duration: 0.2s;
-}
-#navbar ul li a:hover{
-    background-color: white ;
-    color: black;
-    cursor: pointer;
 }
 
 /*Home Section*/
@@ -61,26 +54,48 @@ body{
 }
 .head2{
     font-size: 200%;
-    line-height: 40px;
+    line-height: 50px;
 }
 #intro{
     display: flex;
     flex-direction: column;
+    position: relative;
     align-items: center;
     justify-content: center;
     text-align: justify;
     font-size: 110%;
-    line-height: 25px;
-    margin: 30px 10px 10px 30px;
-    padding: 50px;
+    line-height: 30px;
+    margin: 30px 20px;
+    padding: 30px;
     color: white;
+    animation: animeup 3s ease-out;
 }
 #photo img{
-    border:3px solid white;
+    border: 3px solid black;
+    margin: 30px 30px;
     border-radius: 20px;
-    margin: 30px 30px 10px 10px;
-    padding: px;
     width: 180px;
+    position: relative;
+    animation: animeright 3s ease-out;
+}
+.social2{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    top: -10px;
+    animation: animeleft 3s ease-out;
+}
+.social2 .imgitem{    
+    width: 50px;
+    margin: 0px 30px;
+    position: relative;
+    transition-duration: 0.2s;
+    transition-timing-function: ease-in-out;
+}
+.social2 .imgitem:hover{
+    transform: translateY(-7px);
+    box-shadow: 1px 1px 10px grey;
 }
 
 /*Education Section*/
@@ -89,28 +104,53 @@ body{
     font-size: 39px;
     font-weight: 700;
 }
-#edu{
-    display: flex;
-    flex-wrap: wrap;
-    align-items: center;
-    justify-content: center;
+#edutimeline{
     width: 100%;
-    flex-wrap: wrap;
+    position: relative;
+    margin: 0 auto;
 }
+#edutimeline:after{
+    content: '';
+    position: absolute;
+    width: 3px;
+    background-color: black;
+    top: -25px;
+    bottom: 0;
+    left: 25%;
+}
+#education .container{
+    width: 50%;
+    position: relative;
+    margin-left: 27%;
+    animation: animedown 4s ease-in-out forwards;
+}
+#education .container:before{
+    content:'';
+    position: absolute;
+    background-color: red;
+    border: solid black;
+    border-width: 3px;
+    z-index: 1;
+    border-radius: 50%;
+    left: -5.1%;
+    width: 15px;
+    height: 15px;
+}
+
 #education .items{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    width: 400px;
-    height: 200px;
-    border:2px solid black;
-    border-radius: 10px;
-    margin:20px;
-    padding: 20px 20px;
+    box-shadow: 1px 1px 5px rgb(86, 86, 86);
+    margin: 50px;
+    padding: 10px 10px;
     text-align: center;
     font-size: 110%;
-    gap: 6px;
+    background-color: azure;
+    line-height: 28px;
+    transition-property: all;
+    transition-duration: 0.2s;
+}
+#education .items:hover{
+    box-shadow: 2px 2px 10px rgb(86, 86, 86);
+    cursor: pointer;
 }
 /*Skills Section*/
 #skill{
@@ -126,41 +166,65 @@ body{
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    border: 2px solid black;
-    border-radius: 10px;
     margin: 20px 20px;
-    padding: 20px;
-    width: 400px;
-    height: 200px;
+    padding: 10px 20px;
+    width: 40%;
+    background-color:rgb(255, 248, 238);
+    height: 250px;
     text-align: justify;
     font-size: 110%;
+    box-shadow: 1px 1px 4px rgb(78, 78, 78);
+    line-height: 28px;
+    transition-property: all;
+    transition-duration: 0.2s;
+}
+#skill .skillitem:hover{
+    box-shadow: 2px 2px 10px rgb(78, 78, 78);
+    width: 40.1%;
+    height: 252px;
+    cursor: pointer;
 }
 .topic{
     text-align: center;
     width: 75%;
 }
+
 /*Resume Section*/
 #res{
+    box-shadow: 1px 1px 5px grey;
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     align-items: center;
     justify-content: center;
-    margin: 6px;
-    padding: 2px;
+    margin: 30px auto 20px ;
+    padding: 30px;
+    width: 80%;
+    transition-property: all;
+    transition-duration: 0.3s;
+    transition-timing-function: ease-in-out;
+    background-color: rgb(237, 255, 237);
+}
+
+#res:hover{
+    box-shadow: 2px 2px 10px grey;
 }
 #resume #res .resumeitems{
     display: flex;
     flex-direction: column;
+    gap: 15px;
     align-items: center;
     justify-content: center;
-    width: 80%;
     text-align: justify;
     font-size: 130%;
-    margin: 20px;
+    margin: 0px 40px;
+}
+#resume #res .resumedesc{
+    width: 50%;
+    font-size: 130%;
 }
 #resumeimage{
     border: 2px solid black;
-    width:30%;
+    width:200px;
 }
 
 /*Projects Section*/
@@ -170,25 +234,41 @@ body{
     align-items: center;
     justify-content: center;
     margin: 10px;
-    padding: 19px;
+    padding: 20px;
 }
 #pro .proitems{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 1px 1px 7px grey;
+    margin: 30px;
+    padding: 30px;
+    text-align: center;
+    font-size: 110%;
+    gap: 30px;
+    transition-property: all;
+    transition-duration: 0.2s;
+}
+#pro .proitems:hover{
+    box-shadow: 2px 2px 10px grey;
+    cursor: pointer;
+    background-color:rgb(255, 255, 220);
+}
+#pro .proitems .prodesc{
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    border: 2px solid black;
-    border-radius: 10px;
-    margin: 10px;
+    gap: 10px;
+    width: 40%;
     padding: 20px;
-    width: 600px;
-    text-align: center;
-    font-size: 110%;
-    gap: 15px;
+    text-align: justify;
+    line-height: 25px;
+    
 }
 .proimage{
-    width: 100%;
-    border: 2px solid black;
+    width: 40%;
+    border: 3px solid black;
 }
 /*Contact Section*/
 .contactcont{
@@ -210,48 +290,53 @@ body{
     color: black;
     width: 60%;
     padding: 8px;
+    box-shadow: 0.1px 0px grey;
     font-size: 100%;
-    border-radius: 10px;
-    border:2px solid black;
-    box-shadow: 0.5px 0.5px 1px black;
 }
-#social{
+.social{
     display: flex;
     align-items: center;
     justify-content: center;
 }
-#social .imgitem{    
+.social .imgitem{    
     width: 50px;
     margin: 10px;
+    position: relative;
+    transition-duration: 0.2s;
+    transition-timing-function: ease-in-out;
+}
+.social .imgitem:hover{
+    transform: translateY(-7px);
+    box-shadow: 1px 1px 10px grey;
 }
 /*Footer Section*/
 .foot{
     background-color: black;
-    padding: 15px;
+    padding: 20px;
     color: white;
     text-align: center;
 }
 .foot p{
     font-weight: 600;
     font-size: 115%;
+    transition-property: all;
+    transition-duration: 0.2s;
+}
+.foot p:hover{
+    font-size: 125%;
 }
 
 
 /*Button*/
 .btn{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    background-color: red;
-    border: 2px solid white;
-    border-radius: 10px ;
+    background-color:red;
+    border: 2px solid black;
+    border-radius: 10px;
     padding: 10px;
     margin: 10px;
     font-weight: 700;
     font-size: 100%;
     width: 120px;
-    box-shadow: 0.5px 0.5px 0.5px white;
     transition-property: all;
     transition-duration: 0.2s;
     color: white;
@@ -259,17 +344,16 @@ body{
 .btn:hover{
     background-color: white;
     border: 2px solid black;
-    width: 140px;
+    width: 120px;
     color: black;
     cursor: pointer;
 }
 .btne{
     background-color: red;
-    border: 2px solid white;
+    border: 2px solid black;
     border-radius: 10px ;
     padding: 10px;
     font-weight: 700;
-    box-shadow: 0.5px 0.5px 0.5px white;
     font-size: 90%;
     margin: 10px;
     width: 130px;
@@ -282,9 +366,40 @@ body{
     color: white;
 }
 .btne:hover{
-    background-color: white;
-    border: 2px solid black;
-    color: black;
+    transform:translateY(-2px);
+    box-shadow: 1px 1px 10px grey;
     cursor: pointer;
 }
-
+/*Animation Keyframes*/
+@keyframes animedown {
+    from{
+        top: 180px;
+    }
+    to{
+        top: 0px;
+    }
+}
+@keyframes animeleft {
+    from{
+        left: -900px;
+    }
+    to{
+        left: 0px;
+    }
+}
+@keyframes animeright {
+    from{
+        right: -200px;
+    }
+    to{
+        right: 0px;
+    }
+}
+@keyframes animeup {
+    from{
+        bottom: 300px;
+    }
+    to{
+        bottom: 0px;
+    }
+}
