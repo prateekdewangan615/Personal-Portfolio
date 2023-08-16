@@ -180,8 +180,6 @@
 }
 #skill .skillitem:hover{
     box-shadow: 2px 2px 10px rgb(78, 78, 78);
-    width: 40.1%;
-    height: 252px;
     cursor: pointer;
 }
 .topic{
