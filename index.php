@@ -1,3 +1,4 @@
+
 <?php
 $server = "localhost";
 $username = "root";
@@ -15,14 +16,14 @@ $message = $_POST['message'];
 $sql = "INSERT INTO `portfoliodata` (`name`, `email`, `message`) VALUES ('$name', '$email', '$message');";
 echo $sql;
 echo "<br><br>";
-echo "The following message has been recorded";
+echo "<h2>The following message has been recorded</h2>";
 echo "<br>";
-echo "Name  : $name <br>";
-echo "Email  : $email <br>";
-echo "Message  : $message <br>";
+echo "<h3>Name  : $name</h3>";
+echo "<h3>Email  : $email</h3>";
+echo "<h3>Message  : $message</h3>";
 echo "<br>";
 if($con->query($sql)==true){
-    echo "Submitted Successfully";
+    echo "<h3>Submitted Successfully</h3>";
 }        
 else{
     echo "ERROR $sql <br> $con->error"; 
